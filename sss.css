@@ -984,98 +984,178 @@ body {
 }
 
 @media screen and (min-width: 767px) {
-    .work_container{
+    .work_container {
+        display: grid;
         grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        gap: 3rem;
     }
-    .contact_container{
+
+    .contact_container {
+        display: grid;
         grid-template-columns: repeat(2, max-content);
         justify-content: center;
         column-gap: 3rem;
+    }
+
+    .about_container,
+    .skills_container,
+    .services_container,
+    .testimonial_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about_data,
+    .skills_content,
+    .services_card,
+    .work_card,
+    .testimonial_card,
+    .contact_content {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 }
 
 /* for large devices */
 @media screen and (min-width: 992px) {
-    .container{
+    .container {
         margin-left: auto;
         margin-right: auto;
     }
-    .section{
+
+    .section {
         padding: 6.5rem 0 1rem;
     }
-    .section_title{
+
+    .section_title {
         margin-bottom: 3.5rem;
+        text-align: center;
     }
-    .nav{
+
+    .nav {
         height: calc(var(--header-height) + 1rem);
     }
-    .home_handle{
+
+    .home_handle {
         width: 290px;
         height: 400px;
     }
-    .home-img{
+
+    .home-img {
         width: 220px;
     }
-    .home_social-link{
+
+    .home_social-link {
         padding: .4rem;
         font-size: 1.25rem;
         transform: rotate(90deg) translate(16px, 0);
     }
-    .home_scroll-icon{
+
+    .home_scroll-icon {
         font-size: 2rem;
     }
-    .about_container{
-        grid-template-columns: repeat(2, 1fr);
+
+    /* About Section */
+    .about_container {
+        display: flex;
+        justify-content: center;
         align-items: center;
         column-gap: 4rem;
+        text-align: center;
     }
-    .about_image{
+
+    .about_image {
         width: 350px;
     }
-    .about_data{
-        text-align: initial;
+
+    .about_data {
+        text-align: center;
+        margin: 0 auto;
     }
-    .about_info{
-        justify-content: initial;
+
+    .about_info {
+        justify-content: center;
     }
-    .about_box{
+
+    .about_box {
         text-align: center;
         padding: 1rem 1.25rem;
     }
-    .about_description{
-        padding: 0 4rem 0 0;
+
+    .about_description {
+        padding: 0 2rem;
         margin-bottom: 2.5rem;
     }
-    .skills_container{
-        grid-template-columns: repeat(2, 350px);
-        column-gap: 3rem;
-    }
-    .services_container{
-        grid-template-columns: repeat(3, 192px);
-        column-gap: 3rem;
-    }
-    .services_card{
-        padding: 5rem 2rem 1.5rem;
-    }
-    .work_container{
+
+    /* Skills Section */
+    .skills_container {
+        display: flex;
+        justify-content: center;
         gap: 3rem;
+        flex-wrap: wrap;
     }
-    .work_card{
+
+    /* Services Section */
+    .services_container {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .services_card {
+        padding: 5rem 2rem 1.5rem;
+        margin: 0 auto;
+    }
+
+    /* Work Section */
+    .work_container {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .work_card {
         padding: 1.25rem;
+        margin: 0 auto;
+        text-align: center;
     }
-    .work_img{
+
+    .work_img {
         margin-bottom: 1rem;
     }
-    .work_title{
+
+    .work_title {
         margin-bottom: .5rem;
     }
-    .testimonial_card{
+
+    /* Testimonial Section */
+    .testimonial_card {
         padding: 1.5rem 2rem;
+        margin: 0 auto;
+        text-align: center;
     }
-    .contact_container{
+
+    /* Contact Section */
+    .contact_container {
+        display: flex;
+        justify-content: center;
         column-gap: 6rem;
+        flex-wrap: wrap;
+        text-align: center;
     }
-    .footer_social-link{
+
+    .contact_content {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer_social-link {
         font-size: 1.25rem;
         padding: .4rem;
         border-radius: .5rem;
